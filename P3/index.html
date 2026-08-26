@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <h1>Formulário</h1>
+
+    <form>
+        <!-- Seção: Dados pessoais -->
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+            </p>
+
+            <p>
+                <label for="data_nascimento">Data de nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento">
+            </p>
+
+            <p>
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco">
+            </p>
+
+            <p>
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro">
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade">
+            </p>
+
+            <p>
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep">
+
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado">
+                    <option value="ceara" selected>Ceará</option>
+                    <option value="outros">Outros...</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="cor_favorita">Cor favorita:</label>
+                <input type="color" id="cor_favorita" name="cor_favorita" value="#800000">
+            </p>
+
+            <p>
+                <label for="nivel_satisfacao">Nível de satisfação:</label>
+                0 <input type="range" id="nivel_satisfacao" name="nivel_satisfacao" min="0" max="100" value="50"> 100
+            </p>
+        </fieldset>
+
+        <br>
+
+        <!-- Seção: Dados profissionais -->
+        <fieldset>
+            <legend>Dados profissionais</legend>
+
+            <p>
+                <label>Natureza do Cargo</label><br>
+                <input type="radio" id="gerencia" name="cargo" value="gerencia" checked>
+                <label for="gerencia">Gerência</label>
+
+                <input type="radio" id="financeiro" name="cargo" value="financeiro">
+                <label for="financeiro">Financeiro</label>
+
+                <input type="radio" id="recepcao" name="cargo" value="recepcao">
+                <label for="recepcao">Recepção</label>
+
+                <input type="radio" id="administrativo" name="cargo" value="administrativo">
+                <label for="administrativo">Administrativo</label>
+
+                <input type="radio" id="juridico" name="cargo" value="juridico">
+                <label for="juridico">Jurídico</label>
+            </p>
+
+            <p>
+                <label>Área de interesse</label><br>
+                <input type="checkbox" id="computacao" name="area_interesse[]" value="computacao">
+                <label for="computacao">Computação</label>
+
+                <input type="checkbox" id="quimica" name="area_interesse[]" value="quimica">
+                <label for="quimica">Química</label>
+
+                <input type="checkbox" id="meio_ambiente" name="area_interesse[]" value="meio_ambiente">
+                <label for="meio_ambiente">Meio Ambiente</label>
+
+                <input type="checkbox" id="engenharia" name="area_interesse[]" value="engenharia">
+                <label for="engenharia">Engenharia</label>
+
+                <input type="checkbox" id="matematica" name="area_interesse[]" value="matematica">
+                <label for="matematica">Matemática</label>
+            </p>
+
+            <p>
+                <label for="mini_curriculo">Mini-currículo:</label><br>
+                <textarea id="mini_curriculo" name="mini_curriculo" rows="4" cols="50"></textarea>
+            </p>
+        </fieldset>
+
+        <br>
+
+        <!-- Botões de ação -->
+        <button type="button">Enviar</button>
+        <button type="reset">Limpar</button>
+
+    </form>
+
+</body>
+</html>
