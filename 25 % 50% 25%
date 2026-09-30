@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bem-vindo!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <strong>site</strong>
+    <div>
+      <a href="#">Início</a>
+      <a href="#">Sobre mim</a>
+      <a href="#">Novidades</a>
+      <a href="#">Fale comigo</a>
+    </div>
+  </nav>
+
+  <div class="colunas">
+    <aside class="coluna coluna-1">
+      <h2>Por aqui</h2>
+      <p>Encontre rapidinho o que você procura.</p>
+    </aside>
+
+    <main class="coluna coluna-2">
+      <h2>Que bom ter você aqui!</h2>
+      <p>Fique à vontade. Aqui você encontra o conteúdo principal do site, com tudo explicado de um jeito simples e direto.</p>
+    </main>
+
+    <aside class="coluna coluna-3">
+      <h2>Novidades</h2>
+      <p>Avisos e recados aparecem aqui.</p>
+    </aside>
+  </div>
+
+  <footer>
+    <p>Feito é melhor que perfeito• 2026</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 1.7;
+    color: #2d3b36;
+    background: #eef5f1;
+  }
+  
+  /* Topo */
+  nav {
+    background: #2f7d6d;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  nav strong {
+    color: #fff;
+    font-size: 1.3rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.2rem;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Divisão da tela: 25% | 50% | 25% */
+  .colunas {
+    display: flex;
+    width: 100%;
+    min-height: 70vh;
+  }
+  
+  .coluna {
+    padding: 1.5rem;
+  }
+  
+  .coluna-1 {
+    width: 25%;
+    background: #dcece5;
+  }
+  
+  .coluna-2 {
+    width: 50%;
+    background: #ffffff;
+  }
+  
+  .coluna-3 {
+    width: 25%;
+    background: #dcece5;
+  }
+  
+  h2 {
+    margin-bottom: 0.6rem;
+    font-size: 1.15rem;
+    color: #2f7d6d;
+  }
+  
+  /* Rodapé */
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #2f7d6d;
+    color: #fff;
+  }
+  
+  /* Celular: colunas uma embaixo da outra */
+  @media (max-width: 800px) {
+    .colunas {
+      flex-direction: column;
+    }
+  
+    .coluna-1,
+    .coluna-2,
+    .coluna-3 {
+      width: 100%;
+    }
+  }
+
